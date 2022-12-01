@@ -1,0 +1,183 @@
+@startuml
+
+!include https://raw.githubusercontent.com/danielmciver/puml/main/theme.puml
+
+!$data = {
+	"ruleTypes": [
+    {
+        "name": "Queue Processor",
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Queue-Listener.png>" 
+    }, {
+        "name": "File",
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_File.png>"
+    }, {
+        "name": "Files",
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Files.png>"
+    }, {
+        "name": "File Listener",
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_File-Listener.png>"
+	}, {
+        "name": "Email Listener",
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Email-Listener.png>"
+	}, {
+		"name": "Data Transform",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Transform.png>"
+	}, {
+        "name": "When",
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_When.png>"
+	}, {
+        "name": "Decision",
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Decision.png>"
+	}, {
+        "name": "Decision Table",
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Decision-Table.png>"
+	}, {
+        "name": "Decision Tree",
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Decision-Tree.png>"
+	}, {
+        "name": "Activity",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Activity.png>"
+	}, {
+		"name": "Data Flow",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Flow.png>"
+	}, {
+		"name": "Service",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Boundary.png>"
+	}, {
+        "name": "Connect",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Boundary.png>"
+	}, {	
+		"name": "Page",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Page.png>"
+	}, {
+        "name": "Page List",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Page-List.png>"
+    }, {
+        "name": "Page Group",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Page-Group.png>"
+	}, {
+		"name": "Data Page",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Page.png>"
+	}, {
+		"name": "Data Page List",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Page-List.png>"
+    }, {
+		"name": "Case",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Case.png>"
+	}, {
+		"name": "Stage",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Stage.png>"
+	}, {	
+		"name": "Flow",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Flow.png>"
+	}, {
+		"name": "Flow Action",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Flow-Action.png>"
+	}, {
+		"name": "SLA",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA.png>"
+	}, {	
+		"name": "SLA Case",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA-Case.png>"
+	}, {	
+		"name": "SLA Stage",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA-Stage.png>"
+	}, {	
+		"name": "SLA Step",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA-Step.png>"
+	}, {	
+		"name": "Property",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property.png>"
+	}, {
+		"name": "Text",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Text.png>"
+	}, {
+		"name": "Identifier",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Identifier.png>"
+	}, {
+		"name": "Password",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Password.png>"
+	}, {
+		"name": "Integer",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Integer.png>"
+	}, {
+		"name": "Decimal",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Decimal.png>"
+	}, {	
+		"name": "Double",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Double.png>"
+	}, {	
+		"name": "Date",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Date.png>"
+	}, {
+		"name": "Date Time",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Time.png>"
+	}, {	
+		"name": "Time Of Day",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-TimeOfDay.png>"
+	}, {		
+		"name": "True/False",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-True-False.png>"
+	}, {		
+		"name": "Encrypted",
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-EncryptedText.png>"
+	}]
+}
+
+!unquoted function $getGlyph($ruleType)
+  !foreach $rt in $data.ruleTypes
+    !if $rt.name == $ruleType
+      !return "<font color=#1F2555><size:32>" + $rt.glyph
+    !endif
+  !endfor
+  !return ""
+!endfunction
+
+!unquoted function $stereoType($str)
+  !return "<font color=#5C6ACC><U+00AB>" + $str + "<U+00BB>"
+!endfunction
+
+!procedure $pega($ruleType,$name,$detail="",$alias="",$glyph="<&random>")
+  !if ($alias=="")
+    !$alias = $name
+  !endif
+
+  !if ($ruleType=="Property" || $ruleType=="Text" || $ruleType=="Identifier" || $ruleType=="Password" || $ruleType=="Integer" || $ruleType=="Decimal" || $ruleType=="Double" || $ruleType=="Date Time" || $ruleType=="Date" || $ruleType=="Time Of Day" || $ruleType=="True/False" || $ruleType=="Encrypted" || $ruleType=="Time Of Day")
+
+		participant $alias [
+	      $getGlyph($ruleType)
+	      //$stereoType($ruleType)//
+	      ""$detail""
+	      =.$name
+		]  
+
+	!elseif (($ruleType=="Page" || $ruleType=="Page List") && $detail!="")
+
+		participant $alias [
+	      $getGlyph($ruleType)
+	      //$stereoType($ruleType) of// 
+	      ""$detail""
+	      =$name
+		]
+		
+	!elseif ($detail=="")
+
+		participant $alias [
+	      $getGlyph($ruleType)
+	      //$stereoType($ruleType)// 
+	      =$name
+		]
+
+	!else
+		participant $alias [
+	      $getGlyph($ruleType)
+	      //$stereoType($ruleType)//
+	      ""$detail""
+	      =$name
+		]  
+  !endif
+
+
+!endprocedure
+
+@enduml

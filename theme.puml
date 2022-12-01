@@ -1,0 +1,23 @@
+@startuml
+!theme vibrant
+hide footbox
+
+skinparam roundcorner 10
+
+skinparam BorderColor #1F2555
+skinparam ArrowColor #A70100
+'skinparam MaxMessageSize 80
+'skinparam MaximumWidth 80
+skinparam Shadowing false
+
+skinparam SequenceGroup {
+    BackgroundColor #ffffff/A9DCDF
+}
+
+skinparam participant {
+    BackgroundColor #ffffff
+    BorderColor #ffffff
+    FontColor black
+    FontName Consolas
+}
+@enduml
