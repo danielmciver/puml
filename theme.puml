@@ -20,4 +20,8 @@ skinparam participant {
     FontColor black
     FontName Consolas
 }
+skinparam note {
+    BorderColor #D6B656
+    BackgroundColor #FFF2CC
+}
 @enduml
