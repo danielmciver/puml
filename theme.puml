@@ -3,26 +3,22 @@
 hide footbox
 
 skinparam roundcorner 10
-
 skinparam BorderColor #1F2555
 skinparam ArrowColor #A70100
-'skinparam ArrowColor #DD4343
-skinparam Shadowing false
 skinparam classBackgroundColor #ffffff/5C6ACC
 skinparam SequenceStereotypeFontColor #5C6ACC
 
 skinparam SequenceGroup {
     BackgroundColor #ffffff/A9DCDF
 }
-
 skinparam participant {
     BackgroundColor #ffffff
     BorderColor #ffffff
     FontColor black
 }
 skinparam boundary {
-    BorderColor #1F2555
-    BackgroundColor #ffffff/A9DCDF
+    BorderColor #1F2555
+    BackgroundColor #ffffff/A9DCDF
     StereotypeFontColor #5C6ACC
 }
 skinparam participant {
