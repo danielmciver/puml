@@ -95,10 +95,10 @@
         "name": "Parse",
 		"glyph": "Parse"
 	}, {
-        "name": "Parse",
+        "name": "Parse XML",
 		"glyph": "Parse-XML"
     }, {
-        "name": "Parse",
+    "name": "Parse Delimited",
         "glyph": "Parse-Delimited"
 	}, 
     {
