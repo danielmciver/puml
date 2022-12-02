@@ -6,128 +6,128 @@
 	"ruleTypes": [
     {
         "name": "Queue Processor",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Queue-Listener.png>" 
+        "glyph": "Queue-Listener"
     }, {
         "name": "File",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_File.png>"
+        "glyph": "File"
     }, {
         "name": "Files",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Files.png>"
+        "glyph": "Files"
     }, {
         "name": "File Listener",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_File-Listener.png>"
+        "glyph": "File-Listener"
 	}, {
         "name": "Email Listener",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Email-Listener.png>"
+        "glyph": "Email-Listener"
 	}, {
 		"name": "Data Transform",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Transform.png>"
+		"glyph": "Data-Transform"
 	}, {
         "name": "When",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_When.png>"
+        "glyph": "When"
 	}, {
         "name": "Decision",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Decision.png>"
+        "glyph": "Decision"
 	}, {
         "name": "Decision Table",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Decision-Table.png>"
+        "glyph": "Decision-Table"
 	}, {
         "name": "Decision Tree",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Decision-Tree.png>"
+        "glyph": "Decision-Tree"
 	}, {
         "name": "Activity",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Activity.png>"
+		"glyph": "Activity"
 	}, {
 		"name": "Data Flow",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Flow.png>"
+		"glyph": "Data-Flow"
 	}, {
 		"name": "Service",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Boundary.png>"
+		"glyph": "Boundary"
 	}, {
         "name": "Connect",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Boundary.png>"
+		"glyph": "Boundary"
 	}, {	
 		"name": "Page",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Page.png>"
+		"glyph": "Page"
 	}, {
         "name": "Page List",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Page-List.png>"
+		"glyph": "Page-List"
     }, {
         "name": "Page Group",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Page-Group.png>"
+		"glyph": "Page-Group"
 	}, {
 		"name": "Data Page",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Page.png>"
+		"glyph": "Data-Page"
 	}, {
 		"name": "Data Page List",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Page-List.png>"
+		"glyph": "Data-Page-List"
     }, {
 		"name": "Case",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Case.png>"
+		"glyph": "Case"
 	}, {
 		"name": "Stage",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Stage.png>"
+		"glyph": "Stage"
 	}, {	
 		"name": "Flow",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Flow.png>"
+		"glyph": "Flow"
 	}, {
 		"name": "Flow Action",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Flow-Action.png>"
+		"glyph": "Flow-Action"
 	}, {
 		"name": "SLA",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA.png>"
+		"glyph": "SLA"
 	}, {	
 		"name": "SLA Case",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA-Case.png>"
+		"glyph": "SLA-Case"
 	}, {	
 		"name": "SLA Stage",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA-Stage.png>"
+		"glyph": "SLA-Stage"
 	}, {	
 		"name": "SLA Step",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA-Step.png>"
+		"glyph": "SLA-Step"
 	}, {	
 		"name": "Property",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property.png>"
+		"glyph": "Property"
 	}, {
 		"name": "Text",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Text.png>"
+		"glyph": "Property-Text"
 	}, {
 		"name": "Identifier",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Identifier.png>"
+		"glyph": "Property-Identifier"
 	}, {
 		"name": "Password",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Password.png>"
+		"glyph": "Property-Password"
 	}, {
 		"name": "Integer",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Integer.png>"
+		"glyph": "Property-Integer"
 	}, {
 		"name": "Decimal",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Decimal.png>"
+		"glyph": "Property-Decimal"
 	}, {	
 		"name": "Double",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Double.png>"
+		"glyph": "Property-Double"
 	}, {	
 		"name": "Date",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Date.png>"
+		"glyph": "Property-Date"
 	}, {
 		"name": "Date Time",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Time.png>"
+		"glyph": "Property-Time"
 	}, {	
 		"name": "Time Of Day",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-TimeOfDay.png>"
+		"glyph": "Property-TimeOfDay"
 	}, {		
 		"name": "True/False",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-True-False.png>"
-	}, {		
+		"glyph": "Property-True-False"
+    }, {
 		"name": "Encrypted",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-EncryptedText.png>"
+		"glyph": "Property-EncryptedText"
 	}]
 }
 
 !unquoted function $getGlyph($ruleType)
   !foreach $rt in $data.ruleTypes
     !if $rt.name == $ruleType
-      !return "<font color=#1F2555><size:32>" + $rt.glyph
+      !return "<font color=#1F2555><size:32><img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_" + $rt.glyph + ".png>"
     !endif
   !endfor
   !return ""
