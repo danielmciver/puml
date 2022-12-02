@@ -64,7 +64,7 @@
         "name": "Data Flow Real-Time",
 		"glyph": "Data-Flow-Real-Time"
 	}, {
-		"name": "Data Flow",
+        "name": "Data Flow Single Case",
 		"glyph": "Data-Flow-Single-Case"
 	}, 
     {
