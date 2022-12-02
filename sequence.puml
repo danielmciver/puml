@@ -98,9 +98,16 @@
         "name": "Parse XML",
 		"glyph": "Parse-XML"
     }, {
-    "name": "Parse Delimited",
+        "name": "Parse Delimited",
         "glyph": "Parse-Delimited"
-	}, 
+    }, {
+        "name": "Parse Normalize",
+        "glyph": "Parse"
+    }, {
+        "name": "Parse Structured",
+        "glyph": "Parse"
+
+    }, 
     {
 		"name": "Data Page",
 		"glyph": "Data-Page"
