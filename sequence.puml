@@ -6,121 +6,121 @@
 	"ruleTypes": [
     {
         "name": "Queue Processor",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Queue-Listener.png>" 
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Queue-Listener.svg>" 
     }, {
         "name": "File",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_File.png>"
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_File.svg>"
     }, {
         "name": "Files",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Files.png>"
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Files.svg>"
     }, {
         "name": "File Listener",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_File-Listener.png>"
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_File-Listener.svg>"
 	}, {
         "name": "Email Listener",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Email-Listener.png>"
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Email-Listener.svg>"
 	}, {
 		"name": "Data Transform",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Transform.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Transform.svg>"
 	}, {
         "name": "When",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_When.png>"
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_When.svg>"
 	}, {
         "name": "Decision",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Decision.png>"
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Decision.svg>"
 	}, {
         "name": "Decision Table",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Decision-Table.png>"
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Decision-Table.svg>"
 	}, {
         "name": "Decision Tree",
-        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Decision-Tree.png>"
+        "glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Decision-Tree.svg>"
 	}, {
         "name": "Activity",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Activity.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Activity.svg>"
 	}, {
 		"name": "Data Flow",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Flow.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Flow.svg>"
 	}, {
 		"name": "Service",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Boundary.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Boundary.svg>"
 	}, {
         "name": "Connect",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Boundary.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Boundary.svg>"
 	}, {	
 		"name": "Page",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Page.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Page.svg>"
 	}, {
         "name": "Page List",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Page-List.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Page-List.svg>"
     }, {
         "name": "Page Group",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Page-Group.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Page-Group.svg>"
 	}, {
 		"name": "Data Page",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Page.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Page.svg>"
 	}, {
 		"name": "Data Page List",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Page-List.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Data-Page-List.svg>"
     }, {
 		"name": "Case",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Case.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Case.svg>"
 	}, {
 		"name": "Stage",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Stage.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Stage.svg>"
 	}, {	
 		"name": "Flow",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Flow.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Flow.svg>"
 	}, {
 		"name": "Flow Action",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Flow-Action.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Flow-Action.svg>"
 	}, {
 		"name": "SLA",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA.svg>"
 	}, {	
 		"name": "SLA Case",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA-Case.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA-Case.svg>"
 	}, {	
 		"name": "SLA Stage",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA-Stage.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA-Stage.svg>"
 	}, {	
 		"name": "SLA Step",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA-Step.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_SLA-Step.svg>"
 	}, {	
 		"name": "Property",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property.svg>"
 	}, {
 		"name": "Text",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Text.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Text.svg>"
 	}, {
 		"name": "Identifier",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Identifier.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Identifier.svg>"
 	}, {
 		"name": "Password",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Password.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Password.svg>"
 	}, {
 		"name": "Integer",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Integer.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Integer.svg>"
 	}, {
 		"name": "Decimal",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Decimal.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Decimal.svg>"
 	}, {	
 		"name": "Double",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Double.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Double.svg>"
 	}, {	
 		"name": "Date",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Date.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Date.svg>"
 	}, {
 		"name": "Date Time",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Time.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-Time.svg>"
 	}, {	
 		"name": "Time Of Day",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-TimeOfDay.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-TimeOfDay.svg>"
 	}, {		
 		"name": "True/False",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-True-False.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-True-False.svg>"
 	}, {		
 		"name": "Encrypted",
-		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-EncryptedText.png>"
+		"glyph": "<img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_Property-EncryptedText.svg>"
 	}]
 }
 
