@@ -15,11 +15,6 @@ skinparam participant {
     BackgroundColor #ffffff
     BorderColor #ffffff
 }
-skinparam boundary {
-    BorderColor #1F2555
-    BackgroundColor #ffffff/A9DCDF
-    StereotypeFontColor #5C6ACC
-}
 skinparam participant {
     BorderColor #1F2555
     BackgroundColor #ffffff/A9DCDF
