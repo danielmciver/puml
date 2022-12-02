@@ -53,7 +53,7 @@
 	}, 
     {
 		"name": "Data Flow",
-		"glyph": "Data-Flow-Single-Case"
+		"glyph": "Data-Flow"
 	}, {
         "name": "Data Flow Batch",
 		"glyph": "Data-Flow-Batch"
@@ -73,7 +73,8 @@
 	}, {
         "name": "Connect",
 		"glyph": "Boundary"
-	}, {	
+	}, 
+    {	
 		"name": "Page",
 		"glyph": "Page"
 	}, {
@@ -82,13 +83,32 @@
     }, {
         "name": "Page Group",
 		"glyph": "Page-Group"
-	}, {
+	}, 
+    {
 		"name": "Data Page",
 		"glyph": "Data-Page"
 	}, {
 		"name": "Data Page List",
 		"glyph": "Data-Page-List"
+    }, 
+    {	
+        "name": "Parse",
+		"glyph": "Parse"
+	}, {
+        "name": "Parse",
+		"glyph": "Parse-XML"
     }, {
+        "name": "Parse",
+        "glyph": "Parse-Delimited"
+	}, 
+    {
+		"name": "Data Page",
+		"glyph": "Data-Page"
+	}, {
+		"name": "Data Page List",
+		"glyph": "Data-Page-List"
+    }, 
+    {
 		"name": "Case",
 		"glyph": "Case"
 	}, {
@@ -100,7 +120,8 @@
 	}, {
 		"name": "Flow Action",
 		"glyph": "Flow-Action"
-	}, {
+	}, 
+    {
 		"name": "SLA",
 		"glyph": "SLA"
 	}, {	
@@ -112,10 +133,48 @@
 	}, {	
 		"name": "SLA Step",
 		"glyph": "SLA-Step"
-	}, {	
+	}, 
+    {	
 		"name": "Property",
 		"glyph": "Property"
 	}, {
+		"name": "Property Text",
+		"glyph": "Property-Text"
+	}, {
+		"name": "Property Identifier",
+		"glyph": "Property-Identifier"
+	}, {
+		"name": "Property Password",
+		"glyph": "Property-Password"
+	}, {
+		"name": "Property Integer",
+		"glyph": "Property-Integer"
+	}, {
+		"name": "Property Decimal",
+		"glyph": "Property-Decimal"
+	}, {	
+		"name": "Property Double",
+		"glyph": "Property-Double"
+	}, {	
+		"name": "Property Date",
+		"glyph": "Property-Date"
+	}, {
+		"name": "Property Date Time",
+		"glyph": "Property-Time"
+	}, {	
+		"name": "Property Time Of Day",
+		"glyph": "Property-TimeOfDay"
+	}, {
+		"name": "Property True/False",
+		"glyph": "Property-True-False"
+	}, {
+		"name": "Property True False",
+		"glyph": "Property-True-False"
+    }, {
+		"name": "Property Encrypted",
+		"glyph": "Property-EncryptedText"
+    }, 
+    {
 		"name": "Text",
 		"glyph": "Property-Text"
 	}, {
