@@ -77,8 +77,35 @@
         "name": "Data Set Decision Data Store",
         "glyph": "Data-Set-Decision-Data-Store"
     }, {
-        "name": "Data Set",
+        "name": "Data Set Multi Table",
+        "glyph": "Data-Set-Multi-Table"
+    }, {
+        "name": "Data Set HBase",
         "glyph": "Data-Set"
+    }, {
+        "name": "Data Set HDFS",
+        "glyph": "Data-Set"
+    }, {
+        "name": "Data Set Monte Carlo",
+        "glyph": "Data-Set"
+    }, {
+        "name": "Data Set Summary",
+        "glyph": "Data-Set"
+    }, {
+        "name": "Data Set Facebook",
+        "glyph": "Data-Set"
+    }, {
+        "name": "Data Set YouTube",
+        "glyph": "Data-Set"
+    }, {
+        "name": "Data Set Kafka",
+        "glyph": "Data-Set"
+    }, {
+        "name": "Data Set Kinesis",
+        "glyph": "Data-Set"
+    }, {
+        "name": "Data Set Stream",
+        "glyph": "Data-Set-Stream"
     }, {
         "name": "Service Email",
         "glyph": "Boundary"
