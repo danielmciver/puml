@@ -3,100 +3,145 @@
 !include https://raw.githubusercontent.com/danielmciver/puml/main/theme.puml
 
 !$data = {
-	"ruleTypes": [
+    "ruleTypes": [
     {
         "name": "Queue Processor",
         "glyph": "Queue-Processor"
     }, {
         "name": "Job Scheduler",
         "glyph": "Job-Scheduler"
-    }, 
-    {
+    }, {
         "name": "File",
         "glyph": "File"
     }, {
         "name": "Files",
         "glyph": "Files"
-    }, 
-    {
+    }, {
         "name": "File Listener",
         "glyph": "File-Listener"
-	}, {
+    }, {
         "name": "Email Listener",
         "glyph": "Email-Listener"
-	}, {
+    }, {
         "name": "Queue Listener",
         "glyph": "Queue-Listener"
-	}, 
-    {
-		"name": "Data Transform",
-		"glyph": "Data-Transform"
-	}, {
+    }, {
+        "name": "Data Transform",
+        "glyph": "Data-Transform"
+    }, {
         "name": "Activity",
-		"glyph": "Activity"
-	}, 
-    {
+        "glyph": "Activity"
+    },  {
         "name": "When",
         "glyph": "When"
-	}, {
+    }, {
         "name": "Decision When",
         "glyph": "When"
     }, {
         "name": "Decision",
         "glyph": "Decision"
-	}, {
+    }, {
         "name": "Decision Table",
         "glyph": "Decision-Table"
-	}, {
+    }, {
         "name": "Decision Tree",
         "glyph": "Decision-Tree"
-	}, 
-    {
-		"name": "Data Flow",
-		"glyph": "Data-Flow"
-	}, {
+    }, {
+        "name": "Data Flow",
+        "glyph": "Data-Flow"
+    }, {
         "name": "Data Flow Batch",
-		"glyph": "Data-Flow-Batch"
-	}, {
+        "glyph": "Data-Flow-Batch"
+    }, {
         "name": "Data Flow Real Time",
-		"glyph": "Data-Flow-Real-Time"
-	}, {
+        "glyph": "Data-Flow-Real-Time"
+    }, {
         "name": "Data Flow Real-Time",
-		"glyph": "Data-Flow-Real-Time"
-	}, {
+        "glyph": "Data-Flow-Real-Time"
+    }, {
         "name": "Data Flow Single Case",
-		"glyph": "Data-Flow-Single-Case"
-	}, 
-    {
-		"name": "Service",
-		"glyph": "Boundary"
-	}, {
+        "glyph": "Data-Flow-Single-Case"
+    }, {
+        "name": "Service",
+        "glyph": "Boundary"
+    }, {
+        "name": "Service Email",
+        "glyph": "Boundary"
+    }, {
+        "name": "Service File",
+        "glyph": "Boundary"
+    }, {
+        "name": "Service JMS",
+        "glyph": "Boundary"
+    }, {
+        "name": "Service MQ",
+        "glyph": "Boundary"
+    }, {
+        "name": "Service REST",
+        "glyph": "Boundary"
+    }, {
+        "name": "Service SAP",
+        "glyph": "Boundary"
+    }, {
+        "name": "Service SOAP",
+        "glyph": "Boundary"
+    }, {
+        "name": "Service",
+        "glyph": "Boundary"
+    }, {
         "name": "Connect",
-		"glyph": "Boundary"
-	}, 
-    {	
-		"name": "Page",
-		"glyph": "Page"
-	}, {
+        "glyph": "Boundary"
+    }, {
+        "name": "Connect Cassandra",
+        "glyph": "Boundary"
+    }, {
+        "name": "Connect CMIS",
+        "glyph": "Boundary"
+    }, {
+        "name": "Connect HBase",
+        "glyph": "Boundary"
+    }, {
+        "name": "Connect JMS",
+        "glyph": "Queue-Listener"
+    }, {
+        "name": "Connect MQ",
+        "glyph": "Queue-Listener"
+    }, {
+        "name": "Connect REST",
+        "glyph": "Boundary"
+    }, {
+        "name": "Connect Robot",
+        "glyph": "Boundary"
+    }, {
+        "name": "Connect SAP",
+        "glyph": "Boundary"
+    }, {
+        "name": "Connect SOAP",
+        "glyph": "Boundary"
+    }, {
+        "name": "Connect SQL",
+        "glyph": "Boundary"
+    },  {    
+        "name": "Page",
+        "glyph": "Page"
+    }, {
         "name": "Page List",
-		"glyph": "Page-List"
+        "glyph": "Page-List"
     }, {
         "name": "Page Group",
-		"glyph": "Page-Group"
-	}, 
-    {
-		"name": "Data Page",
-		"glyph": "Data-Page"
-	}, {
-		"name": "Data Page List",
-		"glyph": "Data-Page-List"
-    }, 
-    {	
+        "glyph": "Page-Group"
+    }, {
+        "name": "Data Page",
+        "glyph": "Data-Page"
+    }, {
+        "name": "Data Page List",
+        "glyph": "Data-Page-List"
+    }, {    
         "name": "Parse",
-		"glyph": "Parse"
-	}, {
+        "glyph": "Parse"
+    }, {
         "name": "Parse XML",
-		"glyph": "Parse-XML"
+        "glyph": "Parse-XML"
     }, {
         "name": "Parse Delimited",
         "glyph": "Parse-Delimited"
@@ -106,115 +151,109 @@
     }, {
         "name": "Parse Structured",
         "glyph": "Parse"
-
-    }, 
-    {
-		"name": "Data Page",
-		"glyph": "Data-Page"
-	}, {
-		"name": "Data Page List",
-		"glyph": "Data-Page-List"
-    }, 
-    {
-		"name": "Case",
-		"glyph": "Case"
-	}, {
-		"name": "Stage",
-		"glyph": "Stage"
-	}, {	
-		"name": "Flow",
-		"glyph": "Flow"
-	}, {
-		"name": "Flow Action",
-		"glyph": "Flow-Action"
-	}, 
-    {
-		"name": "SLA",
-		"glyph": "SLA"
-	}, {	
-		"name": "SLA Case",
-		"glyph": "SLA-Case"
-	}, {	
-		"name": "SLA Stage",
-		"glyph": "SLA-Stage"
-	}, {	
-		"name": "SLA Step",
-		"glyph": "SLA-Step"
-	}, 
-    {	
-		"name": "Property",
-		"glyph": "Property"
-	}, {
-		"name": "Property Text",
-		"glyph": "Property-Text"
-	}, {
-		"name": "Property Identifier",
-		"glyph": "Property-Identifier"
-	}, {
-		"name": "Property Password",
-		"glyph": "Property-Password"
-	}, {
-		"name": "Property Integer",
-		"glyph": "Property-Integer"
-	}, {
-		"name": "Property Decimal",
-		"glyph": "Property-Decimal"
-	}, {	
-		"name": "Property Double",
-		"glyph": "Property-Double"
-	}, {	
-		"name": "Property Date",
-		"glyph": "Property-Date"
-	}, {
-		"name": "Property Date Time",
-		"glyph": "Property-Time"
-	}, {	
-		"name": "Property Time Of Day",
-		"glyph": "Property-TimeOfDay"
-	}, {
-		"name": "Property True/False",
-		"glyph": "Property-True-False"
-	}, {
-		"name": "Property True False",
-		"glyph": "Property-True-False"
     }, {
-		"name": "Property Encrypted",
-		"glyph": "Property-EncryptedText"
-    }, 
-    {
-		"name": "Text",
-		"glyph": "Property-Text"
-	}, {
-		"name": "Identifier",
-		"glyph": "Property-Identifier"
-	}, {
-		"name": "Password",
-		"glyph": "Property-Password"
-	}, {
-		"name": "Integer",
-		"glyph": "Property-Integer"
-	}, {
-		"name": "Decimal",
-		"glyph": "Property-Decimal"
-	}, {	
-		"name": "Double",
-		"glyph": "Property-Double"
-	}, {	
-		"name": "Date",
-		"glyph": "Property-Date"
-	}, {
-		"name": "Date Time",
-		"glyph": "Property-Time"
-	}, {	
-		"name": "Time Of Day",
-		"glyph": "Property-TimeOfDay"
-	}, {		
-		"name": "True/False",
-		"glyph": "Property-True-False"
+        "name": "Data Page",
+        "glyph": "Data-Page"
     }, {
-		"name": "Encrypted",
-		"glyph": "Property-EncryptedText"
-	}]
+        "name": "Data Page List",
+        "glyph": "Data-Page-List"
+    }, {
+        "name": "Case",
+        "glyph": "Case"
+    }, {
+        "name": "Stage",
+        "glyph": "Stage"
+    }, {    
+        "name": "Flow",
+        "glyph": "Flow"
+    }, {
+        "name": "Flow Action",
+        "glyph": "Flow-Action"
+    }, {
+        "name": "SLA",
+        "glyph": "SLA"
+    }, {    
+        "name": "SLA Case",
+        "glyph": "SLA-Case"
+    }, {    
+        "name": "SLA Stage",
+        "glyph": "SLA-Stage"
+    }, {    
+        "name": "SLA Step",
+        "glyph": "SLA-Step"
+    }, {    
+        "name": "Property",
+        "glyph": "Property"
+    }, {
+        "name": "Property Text",
+        "glyph": "Property-Text"
+    }, {
+        "name": "Property Identifier",
+        "glyph": "Property-Identifier"
+    }, {
+        "name": "Property Password",
+        "glyph": "Property-Password"
+    }, {
+        "name": "Property Integer",
+        "glyph": "Property-Integer"
+    }, {
+        "name": "Property Decimal",
+        "glyph": "Property-Decimal"
+    }, {    
+        "name": "Property Double",
+        "glyph": "Property-Double"
+    }, {    
+        "name": "Property Date",
+        "glyph": "Property-Date"
+    }, {
+        "name": "Property Date Time",
+        "glyph": "Property-Time"
+    }, {    
+        "name": "Property Time Of Day",
+        "glyph": "Property-TimeOfDay"
+    }, {
+        "name": "Property True/False",
+        "glyph": "Property-True-False"
+    }, {
+        "name": "Property True False",
+        "glyph": "Property-True-False"
+    }, {
+        "name": "Property Encrypted",
+        "glyph": "Property-EncryptedText"
+    }, {
+        "name": "Text",
+        "glyph": "Property-Text"
+    }, {
+        "name": "Identifier",
+        "glyph": "Property-Identifier"
+    }, {
+        "name": "Password",
+        "glyph": "Property-Password"
+    }, {
+        "name": "Integer",
+        "glyph": "Property-Integer"
+    }, {
+        "name": "Decimal",
+        "glyph": "Property-Decimal"
+    }, {    
+        "name": "Double",
+        "glyph": "Property-Double"
+    }, {    
+        "name": "Date",
+        "glyph": "Property-Date"
+    }, {
+        "name": "Date Time",
+        "glyph": "Property-Time"
+    }, {    
+        "name": "Time Of Day",
+        "glyph": "Property-TimeOfDay"
+    }, {        
+        "name": "True/False",
+        "glyph": "Property-True-False"
+    }, {
+        "name": "Encrypted",
+        "glyph": "Property-EncryptedText"
+    }]
 }
 
 !unquoted function $getGlyph($ruleType)
@@ -237,37 +276,37 @@
 
   !if ($ruleType=="Property" || $ruleType=="Text" || $ruleType=="Identifier" || $ruleType=="Password" || $ruleType=="Integer" || $ruleType=="Decimal" || $ruleType=="Double" || $ruleType=="Date Time" || $ruleType=="Date" || $ruleType=="Time Of Day" || $ruleType=="True/False" || $ruleType=="Encrypted" || $ruleType=="Time Of Day")
 
-		participant $alias [
-	      $getGlyph($ruleType)
-	      //$stereoType($ruleType)//
-	      ""$detail""
-	      =.$name
-		]  
+        participant $alias [
+          $getGlyph($ruleType)
+          //$stereoType($ruleType)//
+          ""$detail""
+          =.$name
+        ]  
 
-	!elseif (($ruleType=="Page" || $ruleType=="Page List") && $detail!="")
+    !elseif (($ruleType=="Page" || $ruleType=="Page List") && $detail!="")
 
-		participant $alias [
-	      $getGlyph($ruleType)
-	      //$stereoType($ruleType) of// 
-	      ""$detail""
-	      =$name
-		]
-		
-	!elseif ($detail=="")
+        participant $alias [
+          $getGlyph($ruleType)
+          //$stereoType($ruleType) of// 
+          ""$detail""
+          =$name
+        ]
+        
+    !elseif ($detail=="")
 
-		participant $alias [
-	      $getGlyph($ruleType)
-	      //$stereoType($ruleType)// 
-	      =$name
-		]
+        participant $alias [
+          $getGlyph($ruleType)
+          //$stereoType($ruleType)// 
+          =$name
+        ]
 
-	!else
-		participant $alias [
-	      $getGlyph($ruleType)
-	      //$stereoType($ruleType)//
-	      ""$detail""
-	      =$name
-		]  
+    !else
+        participant $alias [
+          $getGlyph($ruleType)
+          //$stereoType($ruleType)//
+          ""$detail""
+          =$name
+        ]  
   !endif
 
 
