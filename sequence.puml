@@ -6,26 +6,42 @@
 	"ruleTypes": [
     {
         "name": "Queue Processor",
-        "glyph": "Queue-Listener"
+        "glyph": "Queue-Processor"
     }, {
+        "name": "Job Scheduler",
+        "glyph": "Job-Scheduler"
+    }, 
+    {
         "name": "File",
         "glyph": "File"
     }, {
         "name": "Files",
         "glyph": "Files"
-    }, {
+    }, 
+    {
         "name": "File Listener",
         "glyph": "File-Listener"
 	}, {
         "name": "Email Listener",
         "glyph": "Email-Listener"
 	}, {
+        "name": "Queue Listener",
+        "glyph": "Queue-Listener"
+	}, 
+    {
 		"name": "Data Transform",
 		"glyph": "Data-Transform"
 	}, {
+        "name": "Activity",
+		"glyph": "Activity"
+	}, 
+    {
         "name": "When",
         "glyph": "When"
 	}, {
+        "name": "Decision When",
+        "glyph": "When"
+    }, {
         "name": "Decision",
         "glyph": "Decision"
 	}, {
@@ -34,13 +50,24 @@
 	}, {
         "name": "Decision Tree",
         "glyph": "Decision-Tree"
+	}, 
+    {
+		"name": "Data Flow",
+		"glyph": "Data-Flow-Single-Case"
 	}, {
-        "name": "Activity",
-		"glyph": "Activity"
+        "name": "Data Flow Batch",
+		"glyph": "Data-Flow-Batch"
+	}, {
+        "name": "Data Flow Real Time",
+		"glyph": "Data-Flow-Real-Time"
+	}, {
+        "name": "Data Flow Real-Time",
+		"glyph": "Data-Flow-Real-Time"
 	}, {
 		"name": "Data Flow",
-		"glyph": "Data-Flow"
-	}, {
+		"glyph": "Data-Flow-Single-Case"
+	}, 
+    {
 		"name": "Service",
 		"glyph": "Boundary"
 	}, {
