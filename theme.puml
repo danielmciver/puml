@@ -14,7 +14,6 @@ skinparam SequenceGroup {
 skinparam participant {
     BackgroundColor #ffffff
     BorderColor #ffffff
-    FontColor black
 }
 skinparam boundary {
     BorderColor #1F2555
