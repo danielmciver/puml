@@ -108,40 +108,40 @@
         "glyph": "Data-Set-Stream"
     }, {
         "name": "Service Email",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Service File",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Service JMS",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Service MQ",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Service REST",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Service SAP",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Service SOAP",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Service",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Connect",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Connect Cassandra",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Connect CMIS",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Connect HBase",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Connect JMS",
         "glyph": "Queue-Listener"
@@ -150,19 +150,19 @@
         "glyph": "Queue-Listener"
     }, {
         "name": "Connect REST",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Connect Robot",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Connect SAP",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Connect SOAP",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     }, {
         "name": "Connect SQL",
-        "glyph": "Boundary"
+        "glyph": "Connect"
     },  {    
         "name": "Page",
         "glyph": "Page"
