@@ -1,6 +1,6 @@
 @startuml
 
-'!include https://raw.githubusercontent.com/danielmciver/puml/main/theme.puml
+!include https://raw.githubusercontent.com/danielmciver/puml/main/theme.puml
 
 !$data = {
     "ruleTypes": [
