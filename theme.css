@@ -1,0 +1,85 @@
+@startuml
+!theme vibrant
+hide footbox
+
+skinparam roundcorner 10
+
+skinparam BorderColor #1F2555
+skinparam ArrowColor #A70100
+'skinparam ArrowColor #DD4343
+skinparam Shadowing false
+skinparam classBackgroundColor #ffffff/5C6ACC
+skinparam SequenceStereotypeFontColor #5C6ACC
+
+skinparam SequenceGroup {
+    BackgroundColor #ffffff/A9DCDF
+}
+
+skinparam participant {
+    BackgroundColor #ffffff
+    BorderColor #ffffff
+    FontColor black
+    FontName Consolas
+}
+skinparam boundary {
+    BorderColor #1F2555
+    BackgroundColor #ffffff/A9DCDF
+    StereotypeFontColor #5C6ACC
+}
+skinparam participant {
+    BorderColor #1F2555
+    BackgroundColor #ffffff/A9DCDF
+    StereotypeFontColor #5C6ACC
+}
+skinparam interface {
+    BorderColor #1F2555
+    BackgroundColor #ffffff/A9DCDF
+    StereotypeFontColor #5C6ACC
+}
+skinparam note {
+    BorderColor #D6B656
+    BackgroundColor #FFF2CC
+    StereotypeFontColor #5C6ACC
+}
+skinparam queue {
+    BorderColor #1F2555
+    BackgroundColor #ffffff/A9DCDF
+    StereotypeFontColor #5C6ACC
+  }
+skinparam activity {
+    BorderColor #1F2555
+    BackgroundColor #ffffff/A9DCDF
+    StereotypeFontColor #5C6ACC
+  }
+skinparam class {
+    BorderColor #1F2555
+    BackgroundColor #ffffff/A9DCDF
+    StereotypeFontColor #5C6ACC
+  }
+skinparam database {
+    BorderColor #1F2555
+    BackgroundColor #ffffff/A9DCDF
+    StereotypeFontColor #5C6ACC
+}
+skinparam rectangle {
+    BorderColor #1F2555
+    BackgroundColor #ffffff/A9DCDF
+    StereotypeFontColor #5C6ACC
+}
+skinparam queue {
+    BorderColor #1F2555
+    BackgroundColor #ffffff/A9DCDF
+    StereotypeFontColor #5C6ACC
+}
+skinparam storage {
+    BorderColor #1F2555
+    BackgroundColor #ffffff/A9DCDF
+    StereotypeFontColor #5C6ACC
+}
+skinparam package {
+    FontSize 12
+    BorderColor #99B2B2
+    BackgroundColor #ffffff
+    StereotypeFontColor #5C6ACC
+}
+@enduml
