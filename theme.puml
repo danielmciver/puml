@@ -19,7 +19,6 @@ skinparam participant {
     BackgroundColor #ffffff
     BorderColor #ffffff
     FontColor black
-    FontName Consolas
 }
 skinparam boundary {
     BorderColor #1F2555
