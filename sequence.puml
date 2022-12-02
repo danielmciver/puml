@@ -62,8 +62,25 @@
         "name": "Data Flow Single Case",
         "glyph": "Data-Flow-Single-Case"
     }, {
-        "name": "Service",
-        "glyph": "Boundary"
+        "name": "Data Set",
+        "glyph": "Data-Set"
+    }, {
+        "name": "Data Set File",
+        "glyph": "Data-Set-File"
+    }, {
+        "name": "Data Set Database Table",
+        "glyph": "Data-Set-Database-Table"
+    }, {
+        "name": "Data Set DDS",
+        "glyph": "Data-Set-Decision-Data-Store"
+    }, {
+        "name": "Data Set Decision Data Store",
+        "glyph": "Data-Set-Decision-Data-Store"
+    }, {
+
+
+        "name": "Data Set",
+        "glyph": "Data-Set"
     }, {
         "name": "Service Email",
         "glyph": "Boundary"
