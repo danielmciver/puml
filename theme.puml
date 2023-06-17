@@ -28,6 +28,6 @@ skinparam note {
 }
 
 autonumber
-skinparam MaxMessageSize 120
+skinparam MaxMessageSize 150
 
 @enduml
