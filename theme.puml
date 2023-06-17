@@ -26,4 +26,8 @@ skinparam note {
     BackgroundColor #FFF2CC
     StereotypeFontColor #5C6ACC
 }
+
+autonumber
+skinparam MaxMessageSize 120
+
 @enduml
