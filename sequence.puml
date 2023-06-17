@@ -295,10 +295,18 @@
     }, {
         "name": "Encrypted",
         "glyph": "Property-EncryptedText"
+    }, {
+        "name": "Report",
+        "glyph": "Report"
     }]
 }
 
 !unquoted function $getGlyph($ruleType)
+  !foreach $rt in $data.ruleTypes
+    !if $rt.name == $ruleType
+      !return "<font color=#1F2555><size:32><img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_" + $rt.glyph + ".png>"
+    !endif
+  !endfor
   !return ""
 !endfunction
 
