@@ -11,7 +11,7 @@ skinparam ArrowColor #A70100
 skinparam Shadowing false
 
 'skinparam SequenceMessageAlignment 
-skinparam SequenceMessageTextAlignment middle
+'skinparam SequenceMessageTextAlignment middle
 
 skinparam SequenceGroup {
     BackgroundColor #ffffff/A9DCDF
