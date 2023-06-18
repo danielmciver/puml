@@ -1,17 +1,11 @@
 @startuml
 !theme vibrant
-hide footbox
 
 skinparam roundcorner 10
 
 skinparam BorderColor #1F2555
 skinparam ArrowColor #A70100
-'skinparam MaxMessageSize 80
-'skinparam MaximumWidth 80
-skinparam Shadowing false
-
-'skinparam SequenceMessageAlignment 
-'skinparam SequenceMessageTextAlignment middle
+skinparam Shadowing true
 
 skinparam SequenceGroup {
     BackgroundColor #ffffff/A9DCDF
@@ -30,7 +24,12 @@ skinparam note {
     StereotypeFontColor #5C6ACC
 }
 
+LegendBorderThickness 0
+LegendBorderColor #ffffff
+
+' common changes
 autonumber
 skinparam MaxMessageSize 120
+hide footbox
 
 @enduml
