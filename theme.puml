@@ -24,8 +24,8 @@ skinparam note {
     StereotypeFontColor #5C6ACC
 }
 
-LegendBorderThickness 0
-LegendBorderColor #ffffff
+skinparam LegendBorderThickness 0
+skinparam LegendBorderColor #ffffff
 
 ' common changes
 autonumber
