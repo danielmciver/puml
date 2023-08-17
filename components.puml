@@ -1,0 +1,39 @@
+@startuml components
+
+!unquoted procedure Diagram($to, $desc="",$align=right)
+    !if $note_align_flip == true
+        !$align = $swaplr($align)
+    !endif
+    ref over $to
+        $img2(pu_Activity)
+        $auto_number($is_numbered) See '$to' diagram.
+    end ref
+    !if $desc != "" 
+        note $align: $desc
+    !endif
+!endprocedure
+
+
+!unquoted procedure Transform($transform="", $source="", $target="" )
+    Note($transform, //Transform Source//: $source, "left", $is_numbered=true)
+    & Note($transform, $img(TransformArrowx24), "over", $is_numbered=false)
+    & Note($transform, //Transform Target//: $target, "right", $is_numbered=false)
+!endprocedure
+
+
+!unquoted procedure ForEach($what)
+    group foreach [ $what ]
+!endprocedure
+
+!unquoted procedure When($what)
+    group when [ $what ]
+!endprocedure
+
+!unquoted procedure Otherwise($what="")
+    else Otherwise $what
+!endprocedure
+
+show unlinked
+participant components
+
+@enduml

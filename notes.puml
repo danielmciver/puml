@@ -1,0 +1,20 @@
+@startuml notes
+
+!unquoted procedure Note($act, $text, $align=right, $is_numbered=true)
+    !if $text != ""
+        rnote<<msg>> $align $act: $auto_number($is_numbered) $text
+    !endif
+!endprocedure
+
+' Flips when closer to right side of screen
+!unquoted procedure SelfNote($act, $text, $align=right, $is_numbered=true)
+    Note($act, $text, $align, $is_numbered)
+!endprocedure
+
+!unquoted procedure ArrowNote($act, $text, $align=right, $is_numbered=true)
+    Note($act, $text, $align, $is_numbered)
+!endprocedure
+
+show unlinked
+participant notes
+@enduml

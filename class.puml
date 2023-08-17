@@ -1,0 +1,70 @@
+@startuml class
+
+!unquoted function $trimclass($cl)
+    !$bits = %splitstr($cl, "-")
+    !if %size($bits)==1 
+        !return $cl
+    !endif
+    !$i = 0
+    !$str = ""
+    !foreach $bit in $bits
+        !if $i == 0
+            !$str = $str + $first_letter($bit)
+        !elseif $i == %size($bits) - 1
+            !$str = $str + "-" + $bit
+        !else
+            !$str = $str + "-" + $first_letter($bit)
+        !endif
+        !$i = $i + 1
+    !endfor
+    !return $str + $capture_footnote($cl)
+!endfunction
+
+!unquoted function $shorten($str)
+    !if %strlen($str) > 22
+        !return $trimclass($str)
+    !endif
+    !return $str
+!endfunction
+
+!unquoted function $mono($str)
+    !return "<font:monospaced>" + $str + "</font>"
+!endfunction
+
+!unquoted function $format_class($str)
+    !return "<size:10>" + $mono($str) + "<size:10>"
+!endfunction
+
+!unquoted function $Class($str, $icon="",$brac="")
+    !$str = $shorten($str)
+    
+    !if $brac != ""
+        !$str = "(" + $str + ")"
+    !endif
+
+    !$str = $format_class($str)
+    
+    !if $icon != ""
+        !$str = $img($icon) + $str
+    !endif
+    
+    !return $str
+!endfunction
+
+!unquoted function $ClassB($str, $icon="")
+    !$str = $shorten($str)
+    !$str = "(" + $str + ")"
+    !$str = $format_class($str)
+    
+    !if $icon != ""
+        !$str = $img($icon) + $str
+    !endif
+    
+    !return $str
+!endfunction
+
+
+'show unlinked
+'participant components
+
+@enduml

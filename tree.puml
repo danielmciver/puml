@@ -1,0 +1,32 @@
+@startuml
+!pragma teoz true
+
+!$puml = {
+    "shorten" : [ "NAV-MIRE-", "NAV-" ]
+}
+
+!include sequence.puml
+
+'title title
+mainframe Truck Maintenance Calculation
+
+Rule( Service REST,     MaintenanceItems,               NAV-MIRE-Data-MIREService )
+Rule( Activity,         MaintenancePOST,                NAV-MIRE-Data-MIREService )
+Rule( Data Page List,   D_MIRERuleSearch,               NAV-MIRE-Data-MIRERule )
+Rule( Report,           MIRERuleSearch,                 NAV-MIRE-Data-MIRERule )
+Rule( Page,             POSTResponse,                   NAV-Data-Maintenance )
+Rule( Page,             IntervalCalculation,            NAV-MIRE-Data-IntervalCalculation )
+Rule( Decision Table,   IntervalCalculationKey,         NAV-MIRE-Data-IntervalCalculation )
+Rule( Data Page,        D_Parts,                        NAV-MIRE-Data-Part )
+Rule( Report,           Parts,                          NAV-MIRE-Data-Part )
+Rule( Data Page,        D_Labor,                        NAV-MIRE-Data-Labor )
+Rule( Report,           Labor,                          NAV-MIRE-Data-Labor )
+
+?-> MaintenanceItems++:                                                 POST request from
+    MaintenanceItems -> MaintenanceItems:                               Map JSON body\nto Page(POSTRequest)   
+    MaintenanceItems -> MaintenancePOST++:                              Run POST Activity
+    MaintenancePOST -> D_MIRERuleSearch++:                              Page(POSTRequest, NAV-Int-VehicleConfig-Maintenance) Bullets( Prop(ModelFamily)|Prop(ModelCode)|Prop(Country)|PageList(Feature_Code_List,NAV-Int-VehicleConfig-Feature_Code_List ) Prop(FeatCode)|Prop(FeatGrpCode)|Prop(Rear_AxleConfig))
+
+@enduml
+
+'

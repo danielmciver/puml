@@ -1,0 +1,34 @@
+@startuml footnotes
+
+!unquoted procedure $print_footnotes()
+    !if $footnotes != ""
+        !$lines = %splitstr($footnotes, "|")        
+hnote across
+        !foreach $line in $lines
+$line 
+        !endfor
+end note
+    !endif
+!endfunction
+
+!unquoted function $footnote($num)
+'    !return "<sup>" + $num + "</sup>"
+    !return ""
+!endfunction
+
+!unquoted function $capture_footnote($str)
+
+    ' check if we already have footnote and get its pos + length + 1 (however many) to get number
+
+    !$divider = " "
+    !$current_footnote = $current_footnote + 1
+    !if $current_footnote == 8 || $current_footnote == 16 || $current_footnote == 24 || $current_footnote == 32
+        !$divider = "|"
+    !endif
+
+    !$footnotes = $footnotes + $footnote($current_footnote)  + $str + $divider
+    !return $footnote($current_footnote) 
+!endprocedure
+
+@enduml
+

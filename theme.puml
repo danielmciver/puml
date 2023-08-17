@@ -1,35 +1,135 @@
-@startuml
+@startuml theme
+<style>
+    sequenceDiagram {
+        .msg {
+            LineThickness 0
+            Padding 0
+            Margin 0
+        }
+
+        mainframe {
+            BackGroundColor #ffffff/A9DCDF
+            LineColor black
+            LineThickness 2.0
+            FontColor black
+            FontSize 15
+            FontStyle italic
+            Margin 50
+            Padding 100
+        }
+        }
+        mainframeHeader {
+            LineColor black
+            BackGroundColor #ffffff/A9DCDF
+            FontColor black
+        }
+        reference {
+            LineColor black
+            BackGroundColor white
+        }
+        referenceHeader {
+            LineColor black
+            BackGroundColor #ffffff/A9DCDF
+            FontColor black
+        }
+
+        group2 {
+            LineThickness 0
+            Padding 0
+            Margin 0
+            LineColor transparent
+            LineStyle 0
+            BackGroundColor transparent
+        }
+        groupHeader2 {
+            FontStyle plain
+            FontColor red
+            BackGroundColor palegreen
+            LineColor maroon
+            LineThickness 0
+            Padding 0
+            Margin 0
+        }
+    }
+</style>
 !theme vibrant
 
-skinparam roundcorner 10
+' Use triangular arrow heads for syncronous calls
+skinparam Style StrictUML
 
+skinparam BoxPadding 0
+
+skinparam Padding 0
+
+skinparam RoundCorner 10
 skinparam BorderColor #1F2555
 skinparam ArrowColor #A70100
-skinparam Shadowing true
+skinparam Shadowing false
+skinparam Shadowing<<no_shadow>> false
+skinparam Shadowing<<with_shadow>> true
 
 skinparam SequenceGroup {
     BackgroundColor #ffffff/A9DCDF
 }
 
-skinparam participant {
+skinparam Participant {
     BackgroundColor #ffffff
     BorderColor #ffffff
     FontColor black
     FontName Consolas
 }
 
-skinparam note {
+skinparam defaulttextalignment<<center>> center
+skinparam defaulttextalignment<<diagram>> center
+
+skinparam defaulttextalignment<<datar>> right
+skinparam defaulttextalignment<<datal>> left
+
+skinparam Note {
+    FontColor<<error>> #A70000
+    FontColor #000000
     BorderColor #D6B656
     BackgroundColor #FFF2CC
     StereotypeFontColor #5C6ACC
+
+    BackgroundColor<<diagram>> #ffffff/A9DCDF
+    BorderColor<<diagram>> #1F2555
+
+    Padding<<msg>> 0
+    Margin<<msg>> 0
+    BorderColor<<msg>> transparent
+    BackgroundColor<<msg>> transparent
+    NoteBorderThickness<<msg>> 0
+}
+
+skinparam Group {
+    BackgroundColor<<diagram>> #FFFFFF
 }
 
 skinparam LegendBorderThickness 0
 skinparam LegendBorderColor #ffffff
 
+skinparam FooterFontSize 12
+skinparam FooterFontName Courier New
+
 ' common changes
-autonumber
-skinparam MaxMessageSize 120
-hide footbox
+'autonumber 1
+'autonumber stop
+
+skinparam MaxMessageSize 125
+'hide unlinked
+
+'autoactivate on
+
+'skinparam responseMessageBelowArrow true
+
+skinparam SequenceMessageAlign left
+skinparam SequenceMessageAlign<<centered>> center
+skinparam SequenceMessageAlign<<right>> right
+'skinparam sequenceMessageAlign reverseDirection
+
+!$ShowImages = true
+'show unlinked
+'participant theme
 
 @enduml

@@ -1,0 +1,136 @@
+@startuml messages
+
+!global $da = false
+!global $self_padding = ""
+
+!unquoted procedure Incoming($to, $request="", $requestDetail="")
+    ArrowNote($to, $request, "left")
+    [-> $to ++
+!endprocedure
+
+!unquoted procedure Outgoing($from, $response="", $responseDetail="", $deactivate=true)
+    !$from = $set_latest_caller($from)
+
+    ArrowNote($from, $response, "left")
+
+    !if $deactivate == true
+        [<- $from --
+    !else
+        [<- $from
+    !endif
+!endprocedure
+
+!unquoted procedure Call($from="", $to, $request="", $requestDetail="", $activate=true)
+    !$from = $set_latest_caller($from)
+    !if $from == ""
+        ArrowNote($to, $request, "left")
+    !else
+        ArrowNote($from, $request, "right")
+    !endif
+    !if $to != ""
+        $from -> $to
+    !endif
+    !if $activate == true 
+        activate $to
+    !endif
+!endprocedure
+
+!unquoted procedure Return($to="", $from="", $response="", $responseDetail="", $deactivate=true)
+    !$note_align = "left"
+    !$from = $set_latest_caller($from)
+
+    !$da = ""
+    !if $deactivate == true
+        !$da = "--"
+    !endif
+
+    ArrowNote($to, $response, "right")    
+    $to <-- $from $da
+!endprocedure
+
+
+!unquoted function $swaplr($lr)
+    !if $lr == right
+        !return left
+    !elsesif $lr == left
+        !return right
+    !else
+        !return $lr
+    !endif
+!endfunction
+
+!unquoted procedure Self($from="", $action="", $actionDetail="", $activate=false, $align=right)
+    !$from = $set_latest_caller($from)
+    
+    !if $note_align_flip == true
+        !$align = $swaplr($align)
+    !endif
+    
+    !if $align == left
+        !$arrow = "->"
+        !$self_padding = ""
+    !else
+        !$arrow = "<-"
+        !$self_padding = $white("   .")
+    !endif
+
+    !$act = ""
+    !if $activate == true
+        !$act = "++"
+    !endif
+
+    !if $actionDetail != ""
+        SelfNote($from, $actionDetail, $align, $is_numbered=false)
+        & $from $arrow $from $act: $auto_number() $action $self_padding
+    !else
+        SelfNote($from, $action, $align, $is_numbered=false)
+        & $from $arrow $from $act: $auto_number() $self_padding
+    !endif
+   
+!endprocedure
+
+!unquoted procedure RoundTrip($from="", $to="", $request="", $response="", $action="", $requestDetail="", $responseDetail="", $actionDetail="")
+    Call($from, $to, $request)
+    !if $action != ""
+        Self($to, $action)
+    !endif
+    Return($from = $to, $to = $from, $response)
+!endprocedure
+
+!unquoted procedure Jump($to, $tag)
+   $to->o?: Jump to ""$tag""
+!endprocedure
+
+!unquoted procedure Land($from, $tag)
+   ?o->$from: ""$tag""
+!endprocedure
+
+!unquoted procedure Create($from="", $to, $request="")
+    !$from = $set_latest_caller($from)
+    SelfNote($from, $request)
+    $from -> $to **
+!endprocedure
+
+!unquoted procedure Remove($to="", $from, $request="")
+    !$from = $set_latest_caller($from)
+    ArrowNote($to, $request)
+    $from <- $to !!
+!endprocedure
+
+!unquoted function $set_latest_caller($caller)
+    !if $caller == ""
+        !return $latest_caller
+    !else
+        !$latest_caller = $caller
+        !return $caller
+    !endif
+!endfunction
+
+!unquoted function $get_latest_caller()
+    !return $latest_caller
+!endfunction
+
+show unlinked
+participant messages
+
+@enduml

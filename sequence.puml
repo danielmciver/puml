@@ -1,340 +1,180 @@
-@startuml
+@startuml sequence
 
-!include https://raw.githubusercontent.com/danielmciver/puml/main/theme.puml
+!include theme.puml
 
-!$data = {
-    "ruleTypes": [
-    {
-        "name": "Queue Processor",
-        "glyph": "Queue-Processor"
-    }, {
-        "name": "Job Scheduler",
-        "glyph": "Job-Scheduler"
-    }, {
-        "name": "File",
-        "glyph": "File"
-    }, {
-        "name": "Files",
-        "glyph": "Files"
-    }, {
-        "name": "File Listener",
-        "glyph": "File-Listener"
-    }, {
-        "name": "Email Listener",
-        "glyph": "Email-Listener"
-    }, {
-        "name": "Queue Listener",
-        "glyph": "Queue-Listener"
-    }, {
-        "name": "Data Transform",
-        "glyph": "Data-Transform"
-    }, {
-        "name": "Activity",
-        "glyph": "Activity"
-    },  {
-        "name": "When",
-        "glyph": "When"
-    }, {
-        "name": "Decision When",
-        "glyph": "When"
-    }, {
-        "name": "Decision",
-        "glyph": "Decision"
-    }, {
-        "name": "Decision Table",
-        "glyph": "Decision-Table"
-    }, {
-        "name": "Decision Tree",
-        "glyph": "Decision-Tree"
-    }, {
-        "name": "Data Flow",
-        "glyph": "Data-Flow"
-    }, {
-        "name": "Data Flow Batch",
-        "glyph": "Data-Flow-Batch"
-    }, {
-        "name": "Data Flow Real Time",
-        "glyph": "Data-Flow-Real-Time"
-    }, {
-        "name": "Data Flow Real-Time",
-        "glyph": "Data-Flow-Real-Time"
-    }, {
-        "name": "Data Flow Single Case",
-        "glyph": "Data-Flow-Single-Case"
-    }, {
-        "name": "Data Set",
-        "glyph": "Data-Set"
-    }, {
-        "name": "Data Set File",
-        "glyph": "Data-Set-File"
-    }, {
-        "name": "Data Set Database Table",
-        "glyph": "Data-Set-Database-Table"
-    }, {
-        "name": "Data Set DDS",
-        "glyph": "Data-Set-Decision-Data-Store"
-    }, {
-        "name": "Data Set Decision Data Store",
-        "glyph": "Data-Set-Decision-Data-Store"
-    }, {
-        "name": "Data Set Multi Table",
-        "glyph": "Data-Set-Multi-Table"
-    }, {
-        "name": "Data Set HBase",
-        "glyph": "Data-Set"
-    }, {
-        "name": "Data Set HDFS",
-        "glyph": "Data-Set"
-    }, {
-        "name": "Data Set Monte Carlo",
-        "glyph": "Data-Set"
-    }, {
-        "name": "Data Set Summary",
-        "glyph": "Data-Set"
-    }, {
-        "name": "Data Set Facebook",
-        "glyph": "Data-Set"
-    }, {
-        "name": "Data Set YouTube",
-        "glyph": "Data-Set"
-    }, {
-        "name": "Data Set Kafka",
-        "glyph": "Data-Set"
-    }, {
-        "name": "Data Set Kinesis",
-        "glyph": "Data-Set"
-    }, {
-        "name": "Data Set Stream",
-        "glyph": "Data-Set-Stream"
-    }, {
-        "name": "Service Email",
-        "glyph": "Connect"
-    }, {
-        "name": "Service File",
-        "glyph": "Connect"
-    }, {
-        "name": "Service JMS",
-        "glyph": "Connect"
-    }, {
-        "name": "Service MQ",
-        "glyph": "Connect"
-    }, {
-        "name": "Service REST",
-        "glyph": "Connect"
-    }, {
-        "name": "Service SAP",
-        "glyph": "Connect"
-    }, {
-        "name": "Service SOAP",
-        "glyph": "Connect"
-    }, {
-        "name": "Service",
-        "glyph": "Connect"
-    }, {
-        "name": "Connect",
-        "glyph": "Connect"
-    }, {
-        "name": "Connect Cassandra",
-        "glyph": "Connect"
-    }, {
-        "name": "Connect CMIS",
-        "glyph": "Connect"
-    }, {
-        "name": "Connect HBase",
-        "glyph": "Connect"
-    }, {
-        "name": "Connect JMS",
-        "glyph": "Queue-Listener"
-    }, {
-        "name": "Connect MQ",
-        "glyph": "Queue-Listener"
-    }, {
-        "name": "Connect REST",
-        "glyph": "Connect"
-    }, {
-        "name": "Connect Robot",
-        "glyph": "Connect"
-    }, {
-        "name": "Connect SAP",
-        "glyph": "Connect"
-    }, {
-        "name": "Connect SOAP",
-        "glyph": "Connect"
-    }, {
-        "name": "Connect SQL",
-        "glyph": "Connect"
-    },  {    
-        "name": "Page",
-        "glyph": "Page"
-    }, {
-        "name": "Page List",
-        "glyph": "Page-List"
-    }, {
-        "name": "Page Group",
-        "glyph": "Page-Group"
-    }, {
-        "name": "Data Page",
-        "glyph": "Data-Page"
-    }, {
-        "name": "Data Page List",
-        "glyph": "Data-Page-List"
-    }, {    
-        "name": "Parse",
-        "glyph": "Parse"
-    }, {
-        "name": "Parse XML",
-        "glyph": "Parse-XML"
-    }, {
-        "name": "Parse Delimited",
-        "glyph": "Parse-Delimited"
-    }, {
-        "name": "Parse Normalize",
-        "glyph": "Parse"
-    }, {
-        "name": "Parse Structured",
-        "glyph": "Parse"
-    }, {
-        "name": "Data Page",
-        "glyph": "Data-Page"
-    }, {
-        "name": "Data Page List",
-        "glyph": "Data-Page-List"
-    }, {
-        "name": "Case",
-        "glyph": "Case"
-    }, {
-        "name": "Stage",
-        "glyph": "Stage"
-    }, {    
-        "name": "Flow",
-        "glyph": "Flow"
-    }, {
-        "name": "Flow Action",
-        "glyph": "Flow-Action"
-    }, {
-        "name": "SLA",
-        "glyph": "SLA"
-    }, {    
-        "name": "SLA Case",
-        "glyph": "SLA-Case"
-    }, {    
-        "name": "SLA Stage",
-        "glyph": "SLA-Stage"
-    }, {    
-        "name": "SLA Step",
-        "glyph": "SLA-Step"
-    }, {    
-        "name": "Property",
-        "glyph": "Property"
-    }, {
-        "name": "Property Text",
-        "glyph": "Property-Text"
-    }, {
-        "name": "Property Identifier",
-        "glyph": "Property-Identifier"
-    }, {
-        "name": "Property Password",
-        "glyph": "Property-Password"
-    }, {
-        "name": "Property Integer",
-        "glyph": "Property-Integer"
-    }, {
-        "name": "Property Decimal",
-        "glyph": "Property-Decimal"
-    }, {    
-        "name": "Property Double",
-        "glyph": "Property-Double"
-    }, {    
-        "name": "Property Date",
-        "glyph": "Property-Date"
-    }, {
-        "name": "Property Date Time",
-        "glyph": "Property-Time"
-    }, {    
-        "name": "Property Time Of Day",
-        "glyph": "Property-TimeOfDay"
-    }, {
-        "name": "Property True/False",
-        "glyph": "Property-True-False"
-    }, {
-        "name": "Property True False",
-        "glyph": "Property-True-False"
-    }, {
-        "name": "Property Encrypted",
-        "glyph": "Property-EncryptedText"
-    }, {
-        "name": "Text",
-        "glyph": "Property-Text"
-    }, {
-        "name": "Identifier",
-        "glyph": "Property-Identifier"
-    }, {
-        "name": "Password",
-        "glyph": "Property-Password"
-    }, {
-        "name": "Integer",
-        "glyph": "Property-Integer"
-    }, {
-        "name": "Decimal",
-        "glyph": "Property-Decimal"
-    }, {    
-        "name": "Double",
-        "glyph": "Property-Double"
-    }, {    
-        "name": "Date",
-        "glyph": "Property-Date"
-    }, {
-        "name": "Date Time",
-        "glyph": "Property-Time"
-    }, {    
-        "name": "Time Of Day",
-        "glyph": "Property-TimeOfDay"
-    }, {        
-        "name": "True/False",
-        "glyph": "Property-True-False"
-    }, {
-        "name": "Encrypted",
-        "glyph": "Property-EncryptedText"
-    }, {
-        "name": "Report",
-        "glyph": "Report"
-    }]
+!global $img_path = "https://github.com/danielmciver/puml/raw/main/"
+
+
+!global ShowImages = false
+
+!global $icon_prop ="Field16"
+!global $icon_page = "Page16"
+!global $icon_pagelist = "PageList16"
+!global $icon_param = "ParamH16"
+
+!global $unicode_ellipse = "<U+2025>"
+!global $unicode_nbs = "<U+0020>"
+!global $unicode_newline = "<U+000A>"
+
+!global $footnotes = ""
+!global $current_footnote = 0
+
+!global $left_actor = ""
+!global $right_actor = ""
+!global $actor_count = 0
+
+!global $tree_level = 0
+
+!global $note_align_flip = false
+
+!$latest_caller = ""
+!$latest_callee = ""
+
+!$first_call = true
+
+!$auto_num = 0
+
+!global $b1 = "\n*"
+!global $b2 = "\n**"
+!global $b3 = "\n***"
+!global $b4 = "\n****"
+!global $b5 = "\n*****"
+
+!global $t1 = "\n|_"
+!global $t2 = "\n |_"
+!global $t3 = "\n  |_"
+!global $t4 = "\n   |_"
+!global $t5 = "\n    |_"
+
+!global $cb1 = "(" 
+!global $cb2 = ")" 
+
+!global $data = {
+    "ruleTypes":
+    [
+        {"name":"Queue Processor","glyph":"Queue-Processor"},{"name":"Job Scheduler","glyph":"Job-Scheduler"},{"name":"File","glyph":"File"},{"name":"Files","glyph":"Files"},
+        {"name":"File Listener","glyph":"File-Listener"},{"name":"Email Listener","glyph":"Email-Listener"},{"name":"Queue Listener","glyph":"Queue-Listener"},
+        {"name":"Data Transform","glyph":"Data-Transform"},{"name":"Activity","glyph":"Activity"},{"name":"When","glyph":"When"},{"name":"Decision When","glyph":"When"},
+        {"name":"Decision","glyph":"Decision"},{"name":"Decision Table","glyph":"Decision-Table"},{"name":"Decision Tree","glyph":"Decision-Tree"},{"name":"Data Flow","glyph":"Data-Flow"},
+        {"name":"Data Flow Batch","glyph":"Data-Flow-Batch"},{"name":"Data Flow Real Time","glyph":"Data-Flow-Real-Time"},{"name":"Data Flow Real-Time","glyph":"Data-Flow-Real-Time"},
+        {"name":"Data Flow Single Case","glyph":"Data-Flow-Single-Case"},{"name":"Data Set","glyph":"Data-Set"},{"name":"Data Set File","glyph":"Data-Set-File"},
+        {"name":"Data Set Database Table","glyph":"Data-Set-Database-Table"},{"name":"Data Set DDS","glyph":"Data-Set-Decision-Data-Store"},
+        {"name":"Data Set Decision Data Store","glyph":"Data-Set-Decision-Data-Store"},{"name":"Data Set Multi Table","glyph":"Data-Set-Multi-Table"},
+        {"name":"Data Set HBase","glyph":"Data-Set"},{"name":"Data Set HDFS","glyph":"Data-Set"},{"name":"Data Set Monte Carlo","glyph":"Data-Set"},
+        {"name":"Data Set Summary","glyph":"Data-Set"},{"name":"Data Set Facebook","glyph":"Data-Set"},{"name":"Data Set YouTube","glyph":"Data-Set"},
+        {"name":"Data Set Kafka","glyph":"Data-Set"},{"name":"Data Set Kinesis","glyph":"Data-Set"},{"name":"Data Set Stream","glyph":"Data-Set-Stream"},
+        {"name":"Service Email","glyph":"Connect"},{"name":"Service File","glyph":"Connect"},{"name":"Service JMS","glyph":"Connect"},{"name":"Service MQ","glyph":"Connect"},
+        {"name":"Service REST","glyph":"Connect"},{"name":"Service SAP","glyph":"Connect"},{"name":"Service SOAP","glyph":"Connect"},{"name":"Service","glyph":"Connect"},
+        {"name":"Connect","glyph":"Connect"},{"name":"Connect Cassandra","glyph":"Connect"},{"name":"Connect CMIS","glyph":"Connect"},{"name":"Connect HBase","glyph":"Connect"},
+        {"name":"Connect JMS","glyph":"Queue-Listener"},{"name":"Connect MQ","glyph":"Queue-Listener"},{"name":"Connect REST","glyph":"Connect"},{"name":"Connect Robot","glyph":"Connect"},
+        {"name":"Connect SAP","glyph":"Connect"},{"name":"Connect SOAP","glyph":"Connect"},{"name":"Connect SQL","glyph":"Connect"},{"name":"Page","glyph":"Page"},{"name":"Page List","glyph":"Page-List"},
+        {"name":"Page Group","glyph":"Page-Group"},{"name":"Data Page","glyph":"Data-Page"},{"name":"Data Page List","glyph":"Data-Page-List"},{"name":"Parse","glyph":"Parse"},
+        {"name":"Parse XML","glyph":"Parse-XML"},{"name":"Parse Delimited","glyph":"Parse-Delimited"},{"name":"Parse Normalize","glyph":"Parse"},{"name":"Parse Structured","glyph":"Parse"},
+        {"name":"Data Page","glyph":"Data-Page"},{"name":"Data Page List","glyph":"Data-Page-List"},{"name":"Case","glyph":"Case"},{"name":"Stage","glyph":"Stage"},
+        {"name":"Flow","glyph":"Flow"},{"name":"Flow Action","glyph":"Flow-Action"},{"name":"SLA","glyph":"SLA"},{"name":"SLA Case","glyph":"SLA-Case"},{"name":"SLA Stage","glyph":"SLA-Stage"},
+        {"name":"SLA Step","glyph":"SLA-Step"},{"name":"Property","glyph":"Property"},{"name":"Property Text","glyph":"Property-Text"},{"name":"Property Identifier","glyph":"Property-Identifier"},
+        {"name":"Property Password","glyph":"Property-Password"},{"name":"Property Integer","glyph":"Property-Integer"},{"name":"Property Decimal","glyph":"Property-Decimal"},
+        {"name":"Property Double","glyph":"Property-Double"},{"name":"Property Date","glyph":"Property-Date"},{"name":"Property Date Time","glyph":"Property-Time"},
+        {"name":"Property Time Of Day","glyph":"Property-TimeOfDay"},{"name":"Property True/False","glyph":"Property-True-False"},{"name":"Property True False","glyph":"Property-True-False"},
+        {"name":"Property Encrypted","glyph":"Property-EncryptedText"},{"name":"Text","glyph":"Property-Text"},{"name":"Identifier","glyph":"Property-Identifier"},
+        {"name":"Password","glyph":"Property-Password"},{"name":"Integer","glyph":"Property-Integer"},{"name":"Decimal","glyph":"Property-Decimal"},{"name":"Double","glyph":"Property-Double"},
+        {"name":"Date","glyph":"Property-Date"},{"name":"Date Time","glyph":"Property-Time"},{"name":"Time Of Day","glyph":"Property-TimeOfDay"},{"name":"True/False","glyph":"Property-True-False"},
+        {"name":"Encrypted","glyph":"Property-EncryptedText"},{"name":"Report","glyph":"Report"}
+    ]
 }
+
+!include messages.puml
+!include notes.puml
+!include labels.puml
+!include components.puml
+!include html_style.puml
+!include class.puml
+!include footnotes.puml
+
+!unquoted function $auto_number($is_auto_numbering=true)
+    !if $is_auto_numbering == false
+        !return ""
+    !endif
+    !$auto_num = $auto_num + 1
+    !return "<b>" + $auto_num + "</b>"
+!endfunction
+
+!unquoted function $count_actors()
+    !$actor_count = $actor_count + 1
+    !return $actor_count
+!endfunction
+
+!unquoted function $first_letter($str)
+    !return %substr($str, 0, 1)
+!endfunction
+
+!unquoted function $img2($name)
+    !$str = ""
+        !$str = "<img:" + $img_path + $name + ".png>"
+    !return $str
+!endfunction
+
+!unquoted function $img($name)
+    !$str = ""
+    '!if ShowImages == true
+        !$str = "<img:" + $img_path + $name + ".png>"
+    '!endif
+    !return $str
+!endfunction
+
+
+
+' can't seem to ref arrays by index
+!unquoted function $arrayitem($arr,$index,$i=0)
+    !foreach $item in $arr
+        !if ($index == $i)
+            !return $item
+        !endif
+        !$i = $i + 1
+    !endfor
+!endfunction
+
+
+
+
+
+
 
 !unquoted function $getGlyph($ruleType)
   !foreach $rt in $data.ruleTypes
     !if $rt.name == $ruleType
-      !return "<font color=#1F2555><size:32><img:https://raw.githubusercontent.com/danielmciver/puml/main/pu_" + $rt.glyph + ".png>"
+      !return "<font color=#1F2555><size:32>" + $img("pu_" + $rt.glyph)
     !endif
   !endfor
   !return ""
 !endfunction
 
-!unquoted function $stereoType($str)
-  !return "<font color=#5C6ACC><U+00AB>" + $str + "<U+00BB>"
-!endfunction
+!unquoted procedure $pega($ruleType,$name,$detail="",$alias="",$glyph="<&random>")
+    !if ($left_actor=="")
+        !$left_actor = $name
+    !endif
+    !$right_actor = $name
 
-!procedure $pega($ruleType,$name,$detail="",$alias="",$glyph="<&random>")
-  !if ($alias=="")
-    !$alias = $name
-  !endif
+    !if ($alias=="")
+        !$alias = $name
+    !endif
 
   !if ($ruleType=="Property" || $ruleType=="Text" || $ruleType=="Identifier" || $ruleType=="Password" || $ruleType=="Integer" || $ruleType=="Decimal" || $ruleType=="Double" || $ruleType=="Date Time" || $ruleType=="Date" || $ruleType=="Time Of Day" || $ruleType=="True/False" || $ruleType=="Encrypted" || $ruleType=="Time Of Day")
 
         participant $alias [
-          $getGlyph($ruleType)
+        $getGlyph($ruleType)
           //$stereoType($ruleType)//
-          ""$detail""
-          =.$name
-        ]  
+          ""$format_detail($shorten($detail))""
+          =.$format_name($name)
+        ]
 
     !elseif (($ruleType=="Page" || $ruleType=="Page List") && $detail!="")
 
         participant $alias [
           $getGlyph($ruleType)
-          //$stereoType($ruleType) of// 
-          ""$detail""
-          =$name
+          //$stereoType($ruleType)// 
+          ""$format_detail($shorten($detail))""
+          =$format_name($name)
         ]
         
     !elseif ($detail=="")
@@ -342,19 +182,32 @@
         participant $alias [
           $getGlyph($ruleType)
           //$stereoType($ruleType)// 
-          =$name
-        ]
+          =$format_name($name)
+        ] 
 
     !else
         participant $alias [
           $getGlyph($ruleType)
           //$stereoType($ruleType)//
-          ""$detail""
-          =$name
-        ]  
+          ""$format_detail($shorten($detail))""
+          =$format_name($name)
+        ]     
   !endif
-
-
 !endprocedure
 
+!unquoted procedure Rule($ruleType,$name,$detail="",$alias="",$glyph="<&random>")
+    $pega($ruleType,$name,$detail,$alias,$glyph)
+!endprocedure
+
+!unquoted function $leg($str)
+    !return $str + "  "
+!endfunction
+
+'legend top right
+'<b>Legend:</b> $img($icon_page) Page  $img($icon_pagelist) Page List
+'end legend
+
+!include hide.puml
+
 @enduml
+

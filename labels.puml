@@ -1,0 +1,144 @@
+@startuml labels
+
+!unquoted function Numbered($text)
+    !return "%autonumber% " + $text
+!endfunction
+
+!unquoted function Branch($branch, $lvl)
+    !return TreeLevel($branch, $lvl) 
+!endfunction
+
+!unquoted function Tree( $root, $branch)
+    !return $root + Branch($branch, 1)
+!endfunction
+
+!unquoted function TreeLevel($ob,$depth=1)
+    !$str = ""
+    !$treedepth = $t1
+
+    !if $depth == 1
+        !$treedepth = $t1
+    !elseif $depth == 2
+        !$treedepth = $t2
+    !elseif $depth == 3
+        !$treedepth = $t3
+    !elseif $depth == 4
+        !$treedepth = $t4
+    !else
+        !$treedepth = $t5
+    !endif
+
+    !$str = $treedepth + $ob
+
+    !return $str
+!endfunction
+
+!unquoted function Bullets($csv,$depth=1)
+    !$str = ""
+    !$list = %splitstr($csv, "|")
+    !$treedepth = $t1
+
+    !if $depth == 1
+        !$treedepth = $t1
+    !elseif $depth == 2
+        !$treedepth = $t2
+    !elseif $depth == 3
+        !$treedepth = $t3
+    !elseif $depth == 4
+        !$treedepth = $t4
+    !else
+        !$treedepth = $t5
+    !endif
+
+    !foreach $item in $list
+        !$str = $str + $treedepth + $item
+    !endfor
+   
+    '!log Bullet: $str
+
+    !return $str
+!endfunction
+
+!unquoted function ParamBullets($param_csv)
+    !$str = ""
+    !$list = %splitstr($param_csv, "|")
+    !foreach $item in $list
+        !$str = $str + $t1 + ParamPageParam($item)
+    !endfor
+    !return $str
+!endfunction
+
+'!unquoted function Params($param_csv)
+'    !$str = ParamBullets($param_csv)
+'    !return ParamPage(Param) + $str
+'!endfunction
+
+!unquoted function PropList($param_csv)
+    !$str = ""
+    !$list = %splitstr($param_csv, "|")
+    !foreach $item in $list
+        !$str = $str + " " + Prop($item)
+    !endfor
+    !return %substr($str, 1)
+!endfunction
+
+!unquoted function ParamList($param_csv)
+    !$str = ""
+    !$list = %splitstr($param_csv, "|")
+    !foreach $item in $list
+        !$str = $str + " " + $item
+    !endfor
+    !return %substr($str, 1)
+!endfunction
+
+!unquoted function Params($param_csv)
+    !$str = ParamList($param_csv)
+    !return ParamPage(Param) + "(" + $str + ")"
+!endfunction
+
+!unquoted function Page($name="",$cl="")
+    !$str =""
+    !if $name != "" && $cl == ""
+        !$str = IconLabel($name,Page16) 
+    !elseif $name != "" && $cl != ""
+        !$str = IconLabel($name,Page16) + " " + $ClassB($cl)
+    !else
+        !$str = $Class($cl,PageList16)
+    !endif
+    !return $str
+!endfunction
+
+!unquoted function PageOf($cl)
+    !return Page("",$cl)
+!endfunction
+
+!unquoted function PageList($name="",$cl="",$children="")
+    !if $name != "" && $cl == ""
+        !return IconLabel($name,PageList16) + $children
+    !elseif $name != "" && $cl != ""
+        !return IconLabel($name,PageList16) + " " + $ClassB($cl) + $children
+    !else
+        !return $Class($cl,PageList16) + $children
+    !endif
+!endfunction
+
+!unquoted function PageListOf($cl)
+    !return PageList("",$cl)
+!endfunction
+
+!unquoted function PageGroupOf($cl)
+    !return PageList("",$cl)
+!endfunction
+
+!unquoted function PageGroup($name="",$cl="",$children="")
+    !return PageList($name,$cl,$children)
+!endfunction
+
+!unquoted function Assign($prop, $val)
+    !return Prop($prop) + " =" + Const($val)
+!endprocedure
+
+'show unlinked
+'participant components
+
+@enduml

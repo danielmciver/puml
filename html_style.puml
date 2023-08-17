@@ -1,0 +1,70 @@
+@startuml html_style
+
+!unquoted function $white($str)
+    !return "<font color=#FFFFFF>" + $str
+!endfunction
+
+!unquoted function $error_msg($message)
+    !if $str == ""
+        !return ""
+    !endif
+    !return "<font color=red><b>" + $message + "</b></font>"
+!endfunction
+
+!unquoted function $stereoType($str)
+    !return "<font color=#5C6ACC><U+00AB>" + $str + "<U+00BB>"
+!endfunction
+
+!unquoted function $format_detail($str)
+    !return "<size:11>" + $str + "</size>"
+!endfunction
+
+!unquoted function $format_name($str)
+    !return "<size:8>" + $str + "</size>"
+!endfunction
+
+!unquoted function Const($str)
+    !return "<i>" + $str + "</i>"
+!endfunction
+
+
+
+!unquoted function ParamPage($str,$icon=Page16)
+    !return "<b>" + $img($icon) + $str + "</b>"
+!endfunction
+
+!unquoted function IconLabel($str,$icon=Field162)
+    !return $img($icon) + "<b>." + $str + "</b>"
+!endfunction
+
+
+
+!unquoted function Prop($str,$icon=Field162)
+    !return "<b>." + $str + "</b>"
+!endfunction
+
+!unquoted function ParamPageParam($str,$icon=Field162)
+    !return "<b>" + $img($icon) + $str + "</b>"
+!endfunction
+
+!unquoted function Param($str)
+    !return "Param.<b>" + $str + "</b>"
+!endfunction
+
+!unquoted function Set($target,$source)
+    !return "\n==Set==\n" + $target + "\n==From==\n" + $source
+!endfunction
+
+!unquoted function AppendAndMap($target,$source)
+    !return "\n==Append==\n" + $target + "\n==From==\n" + $source
+!endfunction
+
+!unquoted function Method($name,$params="")
+    !return "<b>" + $name + "</b>"
+    ' + $t1 + ParamPage(Params) + $t2 + $params
+!endfunction
+
+'show unlinked
+'participant html_style
+
+@enduml
