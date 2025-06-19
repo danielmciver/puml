@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient_1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="50.003" y2="17.971">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="0.995" stop-color="#A9DCDF" />
+    </linearGradient>
+    <filter color-interpolation-filters="sRGB" x="-48.003" y="-15.971" width="50.003" height="17.971" id="filter_2">
+      <feFlood flood-opacity="0" result="BackgroundImageFix_1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" in="SourceAlpha" />
+      <feOffset dx="2" dy="2" />
+      <feGaussianBlur stdDeviation="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.498 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix_1" result="Shadow_2" />
+      <feBlend mode="normal" in="SourceGraphic" in2="Shadow_2" result="Shape_3" />
+    </filter>
+    <filter color-interpolation-filters="sRGB" x="-48.003" y="-15.971" width="50.003" height="17.971" id="filter_3">
+      <feFlood flood-opacity="0" result="BackgroundImageFix_1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" in="SourceAlpha" />
+      <feOffset dx="2" dy="2" />
+      <feGaussianBlur stdDeviation="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.498 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix_1" result="Shadow_2" />
+      <feBlend mode="normal" in="SourceGraphic" in2="Shadow_2" result="Shape_3" />
+    </filter>
+  </defs>
+  <g>
+    <g>
+      <rect width="64" height="64" fill="#FEFEFE" fill-rule="evenodd" />
+      <g transform="translate(7 11)">
+        <g>
+          <g>
+            <path d="M0 0L0.313889 50.76" fill="#1F2555" fill-rule="evenodd" stroke-width="3" stroke="#1F2555" transform="translate(24.844 -3.76)" />
+            <path d="M45.0026 0C47.7644 0 50.0026 2.2382 50.0026 5L50.0026 12.9705C50.0026 15.7323 47.7644 17.9705 45.0026 17.9705L5 17.9705C2.2382 17.9705 0 15.7323 0 12.9705L0 5C0 2.2382 2.2382 0 5 0L45.0026 0Z" fill="url(#gradient_1)" stroke-width="2" stroke="#113D7E" stroke-linecap="round" stroke-linejoin="round" filter="url(#filter_2)" transform="translate(0 1.825)" />
+            <path d="M46.0026 0C48.2121 0 50.0026 1.79056 50.0026 4L50.0026 13.9705C50.0026 16.1799 48.2121 17.9705 46.0026 17.9705L4 17.9705C1.79056 17.9705 0 16.1799 0 13.9705L0 4C0 1.79056 1.79056 0 4 0L46.0026 0Z" fill="url(#gradient_1)" stroke-width="2" stroke="#113D7E" stroke-linecap="round" stroke-linejoin="round" filter="url(#filter_3)" transform="translate(0 23.445)" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

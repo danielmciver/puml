@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="67" height="64" viewBox="0 0 67 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient_1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="58" y2="37.5">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="0.995" stop-color="#A9DCDF" />
+    </linearGradient>
+    <filter color-interpolation-filters="sRGB" x="-56" y="-35.5" width="58" height="37.5" id="filter_2">
+      <feFlood flood-opacity="0" result="BackgroundImageFix_1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" in="SourceAlpha" />
+      <feOffset dx="2" dy="2" />
+      <feGaussianBlur stdDeviation="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.498 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix_1" result="Shadow_2" />
+      <feBlend mode="normal" in="SourceGraphic" in2="Shadow_2" result="Shape_3" />
+    </filter>
+  </defs>
+  <g>
+    <rect width="64" height="64" fill="#FEFEFE" fill-rule="evenodd" />
+    <g transform="translate(3 15)">
+      <path d="M0 0L12 19L0 37.5L43.5 37.5L58 19L43.5 0L0 0Z" fill="url(#gradient_1)" fill-rule="evenodd" stroke-width="2" stroke="#113D7E" stroke-linecap="round" stroke-linejoin="round" filter="url(#filter_2)" />
+    </g>
+  </g>
+</svg>

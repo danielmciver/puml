@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="65.33" height="64" viewBox="0 0 65.33 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient_1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="34" y2="44.068">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="0.995" stop-color="#A9DCDF" />
+    </linearGradient>
+    <filter color-interpolation-filters="sRGB" x="-32" y="-42.068" width="34" height="44.068" id="filter_2">
+      <feFlood flood-opacity="0" result="BackgroundImageFix_1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" in="SourceAlpha" />
+      <feOffset dx="2" dy="2" />
+      <feGaussianBlur stdDeviation="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.498 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix_1" result="Shadow_2" />
+      <feBlend mode="normal" in="SourceGraphic" in2="Shadow_2" result="Shape_3" />
+    </filter>
+    <filter color-interpolation-filters="sRGB" x="-20.881" y="-7.502" width="22.881" height="9.502" id="filter_3">
+      <feFlood flood-opacity="0" result="BackgroundImageFix_1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" in="SourceAlpha" />
+      <feOffset dx="2" dy="2" />
+      <feGaussianBlur stdDeviation="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.498 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix_1" result="Shadow_2" />
+      <feBlend mode="normal" in="SourceGraphic" in2="Shadow_2" result="Shape_3" />
+    </filter>
+    <filter color-interpolation-filters="sRGB" x="-43" y="-20" width="45" height="22" id="filter_4">
+      <feFlood flood-opacity="0" result="BackgroundImageFix_1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" in="SourceAlpha" />
+      <feOffset dx="0" dy="4" />
+      <feGaussianBlur stdDeviation="2" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.251 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix_1" result="Shadow_2" />
+      <feBlend mode="normal" in="SourceGraphic" in2="Shadow_2" result="Shape_3" />
+    </filter>
+  </defs>
+  <g>
+    <rect width="64" height="64" fill="#FEFEFE" fill-rule="evenodd" />
+    <g transform="translate(7 7)">
+      <g>
+        <g>
+          <path d="M0 1.98793L0 42.0798C0 43.1777 0.986034 44.0678 2.20229 44.0678L31.7978 44.0678C33.0141 44.0678 34 43.1777 34 42.0798L34 1.98793C34 0.890001 33.0141 0 31.7978 0L2.20229 0C0.986034 0 0 0.890026 0 1.98793L0 1.98793Z" fill="url(#gradient_1)" fill-rule="evenodd" stroke-width="2" stroke="#113D7E" stroke-linecap="round" stroke-linejoin="round" filter="url(#filter_2)" transform="translate(0 5.932)" />
+          <path d="M5.3759 0C4.94156 0 4.52496 0.172088 4.21773 0.478402C3.9106 0.784716 3.73805 1.20014 3.73805 1.63331L3.73805 3.77704L1.63795 3.77704C0.73327 3.77707 0 4.5083 0 5.41033L0 7.86986C0.0010376 8.77145 0.7341 9.50165 1.63806 9.50157L21.2434 9.50157C22.1473 9.5016 22.8804 8.7713 22.8813 7.86986L22.8813 5.41033C22.8813 4.97716 22.7088 4.56171 22.4015 4.25542C22.0944 3.94913 21.6778 3.77704 21.2434 3.77704L18.9914 3.77704L18.9914 1.63331C18.9918 0.732112 18.2588 0.000465522 17.3543 0L5.3759 0Z" fill="url(#gradient_1)" fill-rule="evenodd" stroke-width="2" stroke="#113D7E" stroke-linecap="round" stroke-linejoin="round" filter="url(#filter_3)" transform="translate(5.559 0)" />
+        </g>
+        <g transform="translate(5 15)">
+          <rect width="45" height="22" filter="url(#filter_4)" />
+          <g>
+            <path d="M42 0C43.6571 0 45 1.34292 45 3L45 13.8924C45 15.5495 43.6571 16.8924 42 16.8924L3 16.8924C1.34292 16.8924 0 15.5495 0 13.8924L0 3C0 1.34292 1.34292 0 3 0L42 0Z" fill="#FFFFFF" stroke-width="0.265" stroke="#1F2555" stroke-linecap="round" stroke-linejoin="round" transform="translate(0 2.554)" />
+            <path d="M-1.12277 1.45668L-1.12277 20.5421L0.11125 20.5421L0.11125 21.9988L-4.10775 21.9988L-4.10775 20.5421L-2.87374 20.5421L-2.87374 1.45668L-4.10775 1.45668L-4.10775 0L0.11125 0L0.11125 1.45668L-1.12277 1.45668Z" fill="#000000" fill-rule="evenodd" transform="translate(26.297 0)" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

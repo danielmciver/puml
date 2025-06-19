@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="64" height="67" viewBox="0 0 64 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter color-interpolation-filters="sRGB" x="-47" y="-36" width="49" height="38" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix_1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" in="SourceAlpha" />
+      <feOffset dx="2" dy="2" />
+      <feGaussianBlur stdDeviation="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.251 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix_1" result="Shadow_2" />
+      <feBlend mode="normal" in="SourceGraphic" in2="Shadow_2" result="Shape_3" />
+    </filter>
+    <filter color-interpolation-filters="sRGB" x="-47" y="-36" width="49" height="38" id="filter_2">
+      <feFlood flood-opacity="0" result="BackgroundImageFix_1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" in="SourceAlpha" />
+      <feOffset dx="2" dy="2" />
+      <feGaussianBlur stdDeviation="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.498 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix_1" result="Shadow_2" />
+      <feBlend mode="normal" in="SourceGraphic" in2="Shadow_2" result="Shape_3" />
+    </filter>
+    <clipPath id="clip_path_3">
+      <rect width="49" height="38" rx="2" />
+    </clipPath>
+    <clipPath id="clip_path_4">
+      <rect width="49" height="38" rx="2" />
+    </clipPath>
+    <linearGradient id="gradient_5" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="14" y2="31.091">
+      <stop offset="0.169" stop-color="#FFFFFF" />
+      <stop offset="0.985" stop-color="#5C6ACC" />
+    </linearGradient>
+    <linearGradient id="gradient_6" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="16.333" y2="31.091">
+      <stop offset="0.163" stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#7B3A7F" />
+    </linearGradient>
+    <linearGradient id="gradient_7" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="14" y2="31.091">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="0.995" stop-color="#A9DCDF" />
+    </linearGradient>
+    <filter color-interpolation-filters="sRGB" x="-40" y="-31" width="42" height="33" id="filter_8">
+      <feFlood flood-opacity="0" result="BackgroundImageFix_1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" in="SourceAlpha" />
+      <feOffset dx="0" dy="4" />
+      <feGaussianBlur stdDeviation="2" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.251 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix_1" result="Shadow_2" />
+      <feBlend mode="normal" in="SourceGraphic" in2="Shadow_2" result="Shape_3" />
+    </filter>
+  </defs>
+  <g>
+    <rect width="64" height="64" fill="#FEFEFE" fill-rule="evenodd" />
+    <g transform="translate(7 19)">
+      <path d="M47 0C48.1047 0 49 0.89528 49 2L49 36C49 37.1047 48.1047 38 47 38L2 38C0.89528 38 0 37.1047 0 36L0 2C0 0.89528 0.89528 0 2 0L47 0Z" fill="#448AFF" filter="url(#filter_1)" />
+      <g>
+        <g clip-path="url(#clip_path_3)">
+          <rect width="49" height="38" filter="url(#filter_2)" />
+          <g clip-path="url(#clip_path_4)">
+            <g>
+              <g>
+                <g transform="translate(2 6)">
+                  <rect width="14" height="31.091" fill="url(#gradient_5)" fill-rule="evenodd" transform="translate(30.667 0.909)" />
+                  <rect width="16.333" height="31.091" fill="url(#gradient_6)" fill-rule="evenodd" transform="translate(14.333 0.909)" />
+                  <rect width="14" height="31.091" fill="url(#gradient_7)" fill-rule="evenodd" transform="translate(0.333 0.909)" />
+                </g>
+                <path d="M49 0L49 38L0 38L0 0L49 0ZM46.5498 27.4999L33.0748 27.4999L33.0748 35.9998L46.5498 35.9998L46.5498 27.4999ZM15.9253 27.4999L2.45011 27.4999L2.45011 35.9998L15.9253 35.9998L15.9253 27.4999ZM31.2375 27.4999L17.7626 27.4999L17.7626 35.9998L31.2375 35.9998L31.2375 27.4999ZM46.5498 17.4999L33.0748 17.4999L33.0748 26L46.5498 26L46.5498 17.4999ZM15.9253 17.4999L2.45011 17.4999L2.45011 26L15.9253 26L15.9253 17.4999ZM31.2375 17.4999L17.7626 17.4999L17.7626 26L31.2375 26L31.2375 17.4999ZM46.5498 7.49989L33.0748 7.49989L33.0748 16L46.5498 16L46.5498 7.49989ZM15.9253 7.49989L2.45011 7.49989L2.45011 16L15.9253 16L15.9253 7.49989ZM31.2375 7.49989L17.7626 7.49989L17.7626 16L31.2375 16L31.2375 7.49989Z" fill="#1F2555" fill-rule="evenodd" filter="url(#filter_8)" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

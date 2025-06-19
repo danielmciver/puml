@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="66.5" height="64" viewBox="0 0 66.5 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient_1" gradientUnits="userSpaceOnUse" x1="26" y1="35.455" x2="26" y2="-10">
+      <stop offset="0.226" stop-color="#A9DCDF" />
+      <stop offset="0.598" stop-color="#FFFFFF" />
+      <stop offset="0.769" stop-color="#A9DCDF" />
+    </linearGradient>
+    <filter color-interpolation-filters="sRGB" x="-55" y="-28" width="57" height="30" id="filter_2">
+      <feFlood flood-opacity="0" result="BackgroundImageFix_1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" in="SourceAlpha" />
+      <feOffset dx="2" dy="2" />
+      <feGaussianBlur stdDeviation="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.498 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix_1" result="Shadow_2" />
+      <feBlend mode="normal" in="SourceGraphic" in2="Shadow_2" result="Shape_3" />
+    </filter>
+    <radialGradient id="gradient_3" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="matrix(-57 39 -38.727 -56.602 -1 4)">
+      <stop offset="0" stop-color="#FFFFFF" />
+      <stop offset="0.334" stop-color="#A9DCDF" />
+      <stop offset="0.933" stop-color="#FFFFFF" />
+    </radialGradient>
+  </defs>
+  <g>
+    <rect width="64" height="64" fill="#FEFEFE" fill-rule="evenodd" />
+    <g transform="translate(3.5 23)">
+      <g>
+        <path d="M7 0C3.134 0 0 6.71573 0 15.0001C0 23.2844 3.134 30 7 30L7.01356 30L49.2202 29.8013C49.3509 29.8247 49.4819 29.8141 49.613 29.8035C49.6864 29.7975 49.7599 29.7916 49.8333 29.7916C53.7914 29.7912 57 23.1313 57 14.916C56.9988 6.76987 53.8412 0.140861 49.9167 0.0456689L49.9167 0L7 0L7 0Z" fill="url(#gradient_1)" fill-rule="evenodd" stroke-width="2" stroke="#113D7E" stroke-linecap="round" stroke-linejoin="round" filter="url(#filter_2)" />
+        <path d="M0 15C0 6.71571 3.134 0 7 0C10.866 0 14 6.71571 14 15C14 23.2843 10.866 30 7 30C3.13401 30 0 23.2843 0 15Z" fill="url(#gradient_3)" fill-rule="evenodd" stroke-width="2" stroke="#113D7E" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+  </g>
+</svg>
